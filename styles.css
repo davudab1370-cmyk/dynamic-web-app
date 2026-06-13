@@ -1,0 +1,720 @@
+﻿@font-face {
+    font-family: 'B Titr';
+    src: url('fonts/btitr.ttf');
+}
+
+@font-face {
+    font-family: 'B Yekan';
+    src: url('fonts/Iranian Sans.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    outline: none;
+    direction: rtl;
+    list-style:none;
+}
+
+input[type=submit]{
+    font-family: 'B Titr' , Tahoma;
+}
+
+body {
+    background-color: lightgray;
+    background: linear-gradient(lightgray,whitesmoke) fixed;
+}
+
+#wrapper {
+    margin: 10px auto;
+    width: 960px;
+    background-color: white;
+}
+
+#top a {
+    color: red;
+    text-shadow: 1px 2px 2px black;
+    font-family: 'Times New Roman';
+    font-size: 54px;
+    display: block;
+}
+
+#top a:hover {
+    color: darkred;
+}
+
+#top li {
+    float: right;
+    font-size: 30px;
+    font-family: 'b titr';
+}
+
+#top img {
+    width: 180px;
+    height: 160px;
+    margin: 10px 22px;
+}
+
+#top span {
+    padding: 55px 10px;
+    display: block;
+}
+
+#menu {
+    background-color: #333;
+    background-image: linear-gradient(#333, #555);
+    clear: both;
+}
+
+#menu > ul > li {
+    display: inline-block;
+}
+
+#menu a {
+    color: white;
+    display: inline-block;
+    transition: 0.3s;
+    padding: 5px 15px;
+    font-size: 20px;
+    margin: 0 5px;
+    font-family: 'B Titr';
+}
+
+#menu a:hover {
+    color: darkblue;
+    background: linear-gradient(darkgray,gray);
+}
+
+#sidebar {
+    float: right;
+    width: 240px;
+    margin: 10px;
+}
+
+#content {
+    float: right;
+    margin: 10px;
+    width: 680px;
+}
+
+#bottom {
+    clear: both;
+    padding: 25px;
+    font-size: 14px;
+    background-color: #222;
+    background: linear-gradient(#666, #000);
+    text-align: center;
+    color: white;
+}
+
+#bottom p {
+    font-family: 'B Yekan';
+    font-size: 20px;
+}
+
+.postheader h2 a {
+    font-size: 28px;
+    color: #900;
+    margin: 5px;
+    display: inline-block;
+    font-family: 'b titr';
+}
+
+.postheader h2 a:hover {
+    color: #f22;
+}
+
+.postheader p {
+    font-size: 12.5px;
+    color: #666;
+    margin: 5px;
+    font-family: 'B Yekan', Tahoma;
+}
+
+.postheader p a {
+    display: inline-block;
+    padding: 4px 6px;
+    margin: 0 3px;
+    color: white;
+    background-color: darkblue;
+    font-size: 12.5px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-family: 'B Yekan', Tahoma;
+}
+
+.postheader p a:hover {
+    background-color: blue;
+}
+
+.postbody {
+    padding: 5px 10px 5px 25px;
+}
+
+.postbody  {
+    line-height: 180%;
+    text-align: justify;
+    font-family: Tahoma;
+    font-size: 13px;
+}
+
+.commentsbutton a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 8px 8px;
+    color: white;
+    background-color: darkblue;
+    border-radius: 4px;
+    transition: 0.3s;
+    font-family: 'B Yekan', 'B Titr', Tahoma;
+    font-size: 17px;
+}
+
+.commentsbutton a:hover {
+    background-color: blue;
+}
+
+.continuebutton a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 8px 8px;
+    color: white;
+    background-color: darkred;
+    border-radius: 4px;
+    transition: 0.3s;
+    font-family: 'B Yekan', 'B Titr', Tahoma;
+    font-size: 17px;
+}
+
+.continuebutton a:hover {
+    background-color: red;
+}
+
+.postseperator {
+    border-bottom: 1px dashed #777;
+    margin: 15px 5px 40px 80px;
+}
+
+#paging p {
+    float: right;
+    margin-right: 10px;
+    margin-top: 8px;
+    font-family: 'B Titr' , Tahoma;
+}
+
+#paging ul {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#paging li {
+    float: right;
+    margin: 4px 7px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+#paging a {
+    background-color: blue;
+    display: block;
+    width: 38px;
+    text-align: center;
+    padding-bottom: 4px;
+    color: white;
+    font-family: 'B Yekan';
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+#paging a.active {
+    background-color: #909;
+}
+
+#paging a:hover {
+    background-color: black;
+}
+
+#sidebar section {
+    margin: 10px 0;
+}
+
+#sidebar section header {
+    background-color: #222;
+    background: linear-gradient(#222, #666);
+    color: white;
+    padding: 5px 15px;
+    font-family: 'B Yekan', 'B Titr', Tahoma;
+    font-size: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+#login div {
+    background-color: #f5f5f5;
+    padding: 10px 2px 20px 2px;
+}
+
+#login * {
+    font-family: Tahoma;
+    font-size: 13px;
+}
+
+#login input[type=text], #login input[type=password] {
+    border: 1px solid #555;
+    padding: 3px;
+    text-align: left;
+    direction: ltr;
+    margin: 3px 10px;
+}
+
+#login input[type=submit] {
+    background-color: #c00;
+    padding: 6px 14px;
+    border-bottom: 2px solid #400;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 5px 20px;
+}
+
+#login input[type=submit]:hover {
+    background-color: #f00;
+}
+
+.linkbutton {
+    padding: 6px 10px;
+    display: inline-block;
+    background-color: #080;
+    border-bottom: 2px solid #050;
+    color: white;
+    margin: 2px 8px;
+    transition: 0.3s;
+}
+
+.linkbutton:hover {
+    background: #0b0;
+}
+
+#search div {
+    background-color: #f5f5f5;
+    padding: 10px 2px 20px 2px;
+}
+
+#search * {
+    font-family: Tahoma;
+    font-size: 14px;
+}
+
+#search input[type=search] {
+    border: 1px solid #444;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    width: 220px;
+}
+
+#search input[type=submit] {
+    background-color: #c00;
+    padding: 5px 10px;
+    border-bottom: 2px solid #400;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#search input[type=submit]:hover {
+    background-color: #f00;
+}
+
+#search input[type=checkbox] {
+    margin-right: 10px;
+}
+
+#categories div {
+    background-color: #eee;
+}
+
+#categories a {
+    color: black;
+    font-family: 'B Yekan', Tahoma;
+}
+
+#categories div > ul > li {
+    padding-right: 15px;
+    line-height: 220%;
+    border-bottom: 1px solid #666;
+    position: relative;
+    transition: 0.4s;
+}
+
+#categories div > ul > li > a {
+    font-size: 16px;
+    display: block;
+}
+
+#categories div > ul > li:hover {
+    background-color: #bbb;
+    padding-right: 35px;
+}
+
+#categories div > ul > li > ul a {
+    font-size: 14px;
+    display: block;
+}
+
+#categories div > ul > li > ul {
+    display: none;
+    border-top: 1px solid #888;
+    width: 200px;
+    position: absolute;
+    right: 240px;
+    background-color: #bbb;
+    top: -1px;
+}
+
+#categories div > ul > li li {
+    line-height: 220%;
+    border-bottom: 1px solid #666;
+    padding-right: 10px;
+}
+
+#categories div > ul > li li:hover, #categories div > ul > li li:hover a {
+    background-color: #555;
+    color: lightcyan;
+}
+
+#categories div > ul > li:hover > ul {
+    display: block;
+}
+
+#lastposts div {
+    background-color: #eee;
+}
+
+#lastposts a {
+    color: black;
+    font-family: 'B Yekan', Tahoma;
+    font-size: 14px;
+    transition: 0.3s;
+    display: block;
+}
+
+#lastposts li:hover {
+    background-color: #bbb;
+}
+
+#lastposts li {
+    padding-right: 5px;
+    line-height: 220%;
+    border-bottom: 1px solid #666;
+    transition: 0.3s;
+}
+
+#comments{
+    margin:35px 0;
+}
+
+#comments article{
+    clear:both;
+    border:1px solid #aaa;
+    border-radius: 5px;
+    margin:8px 1px;
+    overflow:hidden;
+    background-color: #f7f9f6;
+}
+
+#comments header{
+    background-color:#ab8;
+    background-image:linear-gradient(#ab8 , #cda);
+    overflow:hidden;
+    padding:2px 6px;
+}
+
+#comments header p{
+    float:right;
+    font-family: 'B Yekan';
+    font-weight: 600;
+}
+
+#comments header time{
+    display:block;
+    float:left;
+    font-family: 'B Yekan';
+}
+
+#comments .commentbody{
+    clear:both;
+    font-family:Tahoma;
+    padding:5px;
+    font-size:13px;
+}
+
+#comments footer span{
+    float:left;
+    background-color:blue;
+    padding:4px 8px;
+    font-family: 'b titr';
+    color:white;
+    cursor:pointer;
+}
+
+#comments .answer{
+    margin-right:50px;
+}
+
+#sendcomment {
+    background-color: #eee;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+#sendcomment td{
+    font-family: 'B Titr' , Tahoma;
+}
+
+#sendcomment p {
+    font-family: 'B Yekan';
+    margin: 15px 4px;
+    color: #595;
+    font-size: 18px;
+}
+
+#sendcomment .inputright, #sendcomment .inputleft {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 5px;
+    width: 250px;
+    box-shadow: 3px 3px 5px #e3e3e3 inset;
+    margin: 5px 0;
+    font-family: Tahoma;
+}
+
+#sendcomment .inputleft {
+    direction: ltr;
+}
+
+#sendcomment textarea {
+    border: 1px solid #aaa;
+    box-shadow: 3px 3px 5px #e3e3e3 inset;
+    border-radius: 4px;
+    padding: 5px;
+    width: 400px;
+    height: 220px;
+    resize: none;
+    font-family: Tahoma;
+}
+
+#sendcomment input[type=submit] {
+    background-color: #c00;
+    padding: 2px 16px;
+    border-bottom: 2px solid #400;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 8px 200px;
+    font-size: 18px;
+}
+
+#sendcomment input[type=submit]:hover {
+    background-color: #f33;
+    border-radius:5px;
+}
+
+#download img{
+    width:50px;
+    height:50px;
+    float: right;
+    margin:-40px 80px;
+}
+
+#download p{
+    margin-top: 30px;
+    font-family: 'B Titr' , Tahoma;
+}
+
+#download span{
+    margin: 20px;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    padding: 3px 8px;
+    border-radius: 3px;
+    display: block;
+    width: 80%;
+    font-family: 'b titr';
+}
+
+#download a{
+    color: red;
+}
+
+#signup {
+    float: right;
+    margin: 3px;
+    font-family: 'B Titr' , Tahoma;
+}
+
+#signup header p {
+    margin: 30px 10px;
+    font-size: 18px;
+    font-family: 'B Yekan', Tahoma;
+}
+
+#signup form{
+    background-color:#f4f4f4;
+    border-radius:5px;
+    padding:7px;
+}
+
+#signup .inputright, #signup .inputleft {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 5px;
+    width: 230px;
+    box-shadow: 3px 3px 5px #e3e3e3 inset;
+    margin: 5px 0;
+    font-family: Tahoma;
+}
+
+#signup .inputleft {
+    direction: ltr;
+}
+
+#signup input[type=submit] {
+    background-color: #c00;
+    padding: 2px 16px;
+    border-bottom: 2px solid #400;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 8px 200px;
+    font-size: 18px;
+}
+
+#signup input[type=submit]:hover {
+    background-color: #f33;
+}
+
+#signup footer p {
+    margin: 15px 5px;
+    font-size: 18px;
+    font-family: 'B Yekan', Tahoma;
+}
+
+#signup footer span {
+    font-size: 20px;
+    color: magenta;
+    font-family: 'B Titr' , Tahoma;
+}
+
+#activate {
+    float: right;
+    margin: 3px;
+}
+
+#activate p {
+    width:100%;
+    text-align:center;
+    margin: 20px 100px;
+    font-size: 20px;
+    font-family: 'B Yekan', Tahoma;
+}
+
+#login2 form{
+    background-color:#f4f4f4;
+    border-radius:5px;
+    margin:5px 2px;
+    padding:15px 7px;
+    font-family: 'B Titr' , Tahoma;
+}
+
+#login2 p{
+    margin:8px;
+    font-family:'B Yekan' , Tahoma;
+    font-size:18px;
+}
+
+#login2 input[type=text] , #login2 input[type=password]{
+    direction:ltr;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 5px;
+    width: 230px;
+    box-shadow: 3px 3px 5px #e3e3e3 inset;
+    margin: 8px 0;
+    font-family: Tahoma;
+}
+
+#login2 input[type=submit] {
+    background-color: #c00;
+    padding: 2px 16px;
+    border-bottom: 2px solid #400;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 12px 200px;
+    font-size: 18px;
+}
+
+#login2 input[type=submit]:hover{
+    background-color: #f33;
+}
+
+#login2 a{
+    padding: 6px 10px;
+    display: inline-block;
+    background-color: #080;
+    border-bottom: 2px solid #050;
+    color: white;
+    margin: 2px 20px;
+    transition: 0.3s;
+}
+
+#login2 a:hover{
+    background: #0b0;
+}
+
+#forget{
+    float:right;
+    background-color:#f6f6f6;
+    border-radius:4px;
+    width: 100%;
+}
+
+#forget p{
+    text-align:center;
+    padding:15px 55px;
+    font-size: 18px;
+    font-family: 'B Yekan', Tahoma;
+}
+
+#forget form{
+    text-align:center;
+}
+
+#forget input[type=email]{
+    direction:ltr;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 5px;
+    width: 230px;
+    box-shadow: 3px 3px 5px #e3e3e3 inset;
+    margin: 8px 0;
+    font-family: Tahoma;
+}
+
+#forget input[type=submit] {
+    background-color: #c00;
+    padding: 2px 16px;
+    border-bottom: 2px solid #400;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 12px 200px;
+    font-size: 18px;
+}
+
+#forget input[type=submit]:hover{
+    background-color: #f33;
+}

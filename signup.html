@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>مرکز دانلود کتابهای الکترونیکی</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<header id="top">
+    <ul>
+        <li><span><a href="#">Azad-Download</a></span></li>
+        <li><img src="images/logo.jpg" /></li>
+        <li><span>مرکز دانلود کتابهای الکترونیکی</span></li>
+    </ul>
+</header>
+<nav id="menu">
+    <ul>
+        <li><a href="#">صفحه‌ اصلی</a></li>
+        <li><a href="#">ثبت نام</a></li>
+        <li><a href="#">تماس با ما</a></li>
+        <li><a href="#">درباره‌ ما</a></li>
+    </ul>
+</nav>
+<div id="body">
+    <aside id="sidebar">
+        <section id="login">
+            <header>
+                ورود
+            </header>
+            <div>
+                <form method="post">
+                    <table>
+                        <tr>
+                            <td>
+                                نام کاربری
+                            </td>
+                            <td>
+                                <input type="text" name="user" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                کلمه عبور
+                            </td>
+                            <td>
+                                <input type="password" name="pass" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                مرا به خاطر بسپار
+                                <input type="checkbox" name="remember" value="yes" />
+                                <input type="submit" name="login" value="ورود" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <a href="#" class="linkbutton">ثبت نام</a>
+                                <a href="#" class="linkbutton">فراموشی کلمه عبور</a>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+        <section id="search">
+            <header>
+                جستجو
+            </header>
+            <div>
+                <form>
+                    <input type="search" name="q" placeholder="جستجو کنید" />
+                    <input type="submit" name="search" value="جستجو در" />
+                    <input type="checkbox" name="title" value="yes" checked="checked" /> عنوان
+                    <input type="checkbox" name="description" value="yes" checked="checked" /> توضیحات
+                </form>
+            </div>
+        </section>
+        <section id="categories">
+            <header>
+                گروه‌ها
+            </header>
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">گروه اصلی 1</a>
+                        <ul>
+                            <li><a href="#">گروه فرعی 1</a></li>
+                            <li><a href="#">گروه فرعی 2</a></li>
+                            <li><a href="#">گروه فرعی 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">گروه اصلی 2</a>
+                        <ul>
+                            <li><a href="#">گروه فرعی 1</a></li>
+                            <li><a href="#">گروه فرعی 2</a></li>
+                            <li><a href="#">گروه فرعی 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">گروه اصلی 3</a>
+                        <ul>
+                            <li><a href="#">گروه فرعی 1</a></li>
+                            <li><a href="#">گروه فرعی 2</a></li>
+                            <li><a href="#">گروه فرعی 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">گروه اصلی 4</a>
+                        <ul>
+                            <li><a href="#">گروه فرعی 1</a></li>
+                            <li><a href="#">گروه فرعی 2</a></li>
+                            <li><a href="#">گروه فرعی 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">گروه اصلی 5</a>
+                        <ul>
+                            <li><a href="#">گروه فرعی 1</a></li>
+                            <li><a href="#">گروه فرعی 2</a></li>
+                            <li><a href="#">گروه فرعی 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="lastposts">
+            <header>
+                آخرین مطالب
+            </header>
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">مطلب شماره 5</a>
+                    </li>
+                    <li>
+                        <a href="#">مطلب شماره 4</a>
+                    </li>
+                    <li>
+                        <a href="#">مطلب شماره 3</a>
+                    </li>
+                    <li>
+                        <a href="#">مطلب شماره 2</a>
+                    </li>
+                    <li>
+                        <a href="#">مطلب شماره 1</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </aside>
+    <section id="content">
+        <article id="signup">
+            <header>
+                <p>برای عضویت در سایت فرم زیر را تکمیل و ارسال کنید</p>
+            </header>
+            <form method="post">
+                <table>
+                    <tr>
+                        <td width="140">نام :</td>
+                        <td>
+                            <input type="text" name="first" id="first" class="inputright" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>نام خانوادگی :</td>
+                        <td>
+                            <input type="text" name="last" id="last" class="inputright" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>نام کاربری :</td>
+                        <td>
+                            <input type="text" name="user" id="user" class="inputleft" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ایمیل :</td>
+                        <td>
+                            <input type="email" name="email" id="email" class="inputleft" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>کلمه‌ عبور :</td>
+                        <td>
+                            <input type="password" name="pass1" id="pass1" class="inputleft" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>تکرار کلمه عبور</td>
+                        <td>
+                            <input type="password" name="pass2" id="pass2" class="inputleft" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="ثبت نام" onclick="checkSignup()" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <footer>
+                <p>
+                    <span>***</span> در صورت عضویت در سایت می‌توانید کتابهای آموزشی سایت را به صورت رایگان دانلود کنید.
+                </p>
+            </footer>
+        </article>
+    </section>
+</div>
+<footer id="bottom">
+    <p>
+        © تمامی حقوق برای Azad-Download محفوظ می باشد.
+    </p>
+</footer>
+</div>
+</body>
+</html>
